@@ -20,7 +20,7 @@ ZPixel 是 [DSH（DeepSeek Harness）](https://github.com/deepseek-ai) 的插件
 
 |不使用插件|使用 ZPixel|
 |-|-|
-|!\[无插件](docs/images/compare-no-plugin.png)|!\[使用 ZPixel](docs/images/compare-with-zpixel.png)|
+|![无插件](docs/images/compare-no-plugin.png)|![使用 ZPixel](docs/images/compare-with-zpixel.png)|
 
 两者 token 开销几乎相等，差异基本可视为实验方差，因此**插件既不减少也不增加 token 开销**。它改变的是模型组织空间信息的方式：部件、遮挡和光照来自场景结构，而不是一次性的平面笔触。
 
@@ -162,7 +162,7 @@ Same model (DeepSeek-V4.1-Flash-1017 official API), same prompt, same WeNeed rea
 
 |Without the plugin|With ZPixel|
 |-|-|
-|!\[without plugin](docs/images/compare-no-plugin.png)|!\[with ZPixel](docs/images/compare-with-zpixel.png)|
+|![without plugin](docs/images/compare-no-plugin.png)|![with ZPixel](docs/images/compare-with-zpixel.png)|
 
 Token cost is essentially identical, the difference is within experimental variance,so **The plugin neither reduces nor increases token usage** — it changes how the model organizes spatial information: parts, occlusion and lighting come from scene structure instead of one-off flat brush strokes.
 
