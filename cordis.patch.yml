@@ -1,0 +1,4 @@
+- insert:
+    - id: zpixel
+      name: '@dsh-external/dsh-zpixel'
+      config: {}

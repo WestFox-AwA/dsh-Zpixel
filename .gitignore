@@ -1,0 +1,9 @@
+# test and runtime artifacts
+.validation/
+.zpixel/
+node_modules/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

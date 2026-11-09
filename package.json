@@ -1,0 +1,56 @@
+{
+  "name": "@dsh-external/dsh-zpixel",
+  "version": "0.5.3-dev",
+  "type": "module",
+  "description": "Y-up spatial authoring and exact-grid rendering for top-down game assets.",
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./capability": "./src/capability.mjs",
+    "./core": "./src/scene.mjs",
+    "./renderer": "./src/renderer.mjs",
+    "./geometry": "./src/geometry.mjs",
+    "./spatial": "./src/spatial.mjs",
+    "./normalmap": "./src/normalmap.mjs",
+    "./migration": "./src/migration.mjs",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/interaction-contract.test.mjs test/capability.test.mjs test/core.test.mjs test/rendering.test.mjs test/protocol-schema.test.mjs test/world-visibility.test.mjs test/layer-guide.test.mjs test/create-boundaries.test.mjs test/authoring-guide.test.mjs test/normalmap.test.mjs test/normalmap-service.test.mjs test/contract-regression.test.mjs test/contribution.test.mjs test/appearance-model.test.mjs test/appearance-rendering.test.mjs test/appearance-contract.test.mjs test/appearance-service.test.mjs test/theme-model.test.mjs test/theme-store.test.mjs test/theme-runtime.test.mjs test/theme-contract.test.mjs test/theme-service.test.mjs test/observation.test.mjs test/model-first-contract.test.mjs test/model-first-service.test.mjs test/observation-boundaries.test.mjs",
+    "demo": "node scripts/demo.mjs"
+  },
+  "files": [
+    "src",
+    "test",
+    "cordis.patch.yml",
+    "locale",
+    "icon.png",
+    "LICENSE",
+    "README.md",
+    "CAPABILITY.md",
+    "CONTRACT-0.3.md",
+    "THEMES.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "pixel-art",
+    "sprite",
+    "normal-map",
+    "isometric",
+    "top-down",
+    "godot"
+  ]
+}
